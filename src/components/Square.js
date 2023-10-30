@@ -1,8 +1,15 @@
 import React from "react"
 
-const Square = ({value, index, handleSquareClick}) => {
+const Square = ({value, index, handleSquareClick, gameOver}) => {
 const handleClick = () => {
-  handleSquareClick(index)
+  console.log(gameOver)
+  if (gameOver){
+    handleSquareClick(null)
+  }else {
+    handleSquareClick(index)
+  }
+  
+
 }  
 
   return (
