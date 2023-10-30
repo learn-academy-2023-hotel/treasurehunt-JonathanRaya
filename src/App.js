@@ -23,16 +23,12 @@ const App = () => {
   );
 
   const handleSquareClick = (clickedSquareindex) => {
-    let updatedBoard = [...board];
-    if (clickedSquareindex === treasureLocation) {
-      setTreasureLocation[clickedSquareindex] = "💍";
-    } else if (clickedSquareindex === bombLocation) {
-      updatedBoard[clickedSquareindex] = "💣";
-    } else {
-      updatedBoard[clickedSquareindex] = "🌵";
-    }
-    setBoard(updatedBoard);
-  };
+
+    let updatedBoard = [... board]
+    updatedBoard[clickedSquareindex] = "🌵"
+    setBoard(updatedBoard)
+  }
+
   return (
     <>
       <h1>Treasure Hunt Game</h1>
