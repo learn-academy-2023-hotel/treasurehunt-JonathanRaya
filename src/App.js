@@ -17,7 +17,9 @@ const App = () => {
 
 
   const handleSquareClick = (clickedSquareindex) => {
-    alert(clickedSquareindex)
+    let updatedBoard = [... board]
+    updatedBoard[clickedSquareindex] = "🌵"
+    setBoard(updatedBoard)
   }
   return (
     <>
