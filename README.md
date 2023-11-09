@@ -90,3 +90,4 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 - As a developer, my variables are all named semantically.
 - As a developer, I have refactored and efficient code.
 - As a developer, I have my application [deployed as a live website](https://render.com/docs/deploy-create-react-app).
+TESTING new computer
